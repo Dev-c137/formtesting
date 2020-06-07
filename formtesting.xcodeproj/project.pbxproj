@@ -3,29 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BB377C0C248C8D3800E7E64E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB377C0B248C8D3800E7E64E /* AppDelegate.swift */; };
 		BB377C0E248C8D3800E7E64E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB377C0D248C8D3800E7E64E /* SceneDelegate.swift */; };
-		BB377C10248C8D3800E7E64E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB377C0F248C8D3800E7E64E /* ViewController.swift */; };
+		BB377C10248C8D3800E7E64E /* PatientFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB377C0F248C8D3800E7E64E /* PatientFormViewController.swift */; };
 		BB377C13248C8D3800E7E64E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB377C11248C8D3800E7E64E /* Main.storyboard */; };
-		BB377C16248C8D3800E7E64E /* formtesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB377C14248C8D3800E7E64E /* formtesting.xcdatamodeld */; };
+		BB377C16248C8D3800E7E64E /* Details.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB377C14248C8D3800E7E64E /* Details.xcdatamodeld */; };
 		BB377C18248C8D3900E7E64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB377C17248C8D3900E7E64E /* Assets.xcassets */; };
 		BB377C1B248C8D3900E7E64E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB377C19248C8D3900E7E64E /* LaunchScreen.storyboard */; };
+		BB377C27248C8DE100E7E64E /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = BB377C26248C8DE100E7E64E /* Eureka */; };
+		BB8B458D248CF0680034EE96 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8B458C248CF0680034EE96 /* ChoiceViewController.swift */; };
+		BBD6978F248C9E560075F845 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD6978E248C9E560075F845 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB377C08248C8D3800E7E64E /* formtesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formtesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB377C0B248C8D3800E7E64E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB377C0D248C8D3800E7E64E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB377C0F248C8D3800E7E64E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB377C0F248C8D3800E7E64E /* PatientFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientFormViewController.swift; sourceTree = "<group>"; };
 		BB377C12248C8D3800E7E64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB377C15248C8D3800E7E64E /* formtesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = formtesting.xcdatamodel; sourceTree = "<group>"; };
 		BB377C17248C8D3900E7E64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB377C1A248C8D3900E7E64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB377C1C248C8D3900E7E64E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8B458C248CF0680034EE96 /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		BBD6978E248C9E560075F845 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB377C27248C8DE100E7E64E /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +66,40 @@
 			children = (
 				BB377C0B248C8D3800E7E64E /* AppDelegate.swift */,
 				BB377C0D248C8D3800E7E64E /* SceneDelegate.swift */,
-				BB377C0F248C8D3800E7E64E /* ViewController.swift */,
-				BB377C11248C8D3800E7E64E /* Main.storyboard */,
+				BB377C24248C8D5A00E7E64E /* Model */,
+				BB377C23248C8D5100E7E64E /* View */,
+				BB377C22248C8D4100E7E64E /* Controller */,
 				BB377C17248C8D3900E7E64E /* Assets.xcassets */,
 				BB377C19248C8D3900E7E64E /* LaunchScreen.storyboard */,
 				BB377C1C248C8D3900E7E64E /* Info.plist */,
-				BB377C14248C8D3800E7E64E /* formtesting.xcdatamodeld */,
 			);
 			path = formtesting;
+			sourceTree = "<group>";
+		};
+		BB377C22248C8D4100E7E64E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B458C248CF0680034EE96 /* ChoiceViewController.swift */,
+				BB377C0F248C8D3800E7E64E /* PatientFormViewController.swift */,
+				BBD6978E248C9E560075F845 /* Search.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB377C23248C8D5100E7E64E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB377C11248C8D3800E7E64E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB377C24248C8D5A00E7E64E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB377C14248C8D3800E7E64E /* Details.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +118,9 @@
 			dependencies = (
 			);
 			name = formtesting;
+			packageProductDependencies = (
+				BB377C26248C8DE100E7E64E /* Eureka */,
+			);
 			productName = formtesting;
 			productReference = BB377C08248C8D3800E7E64E /* formtesting.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +149,9 @@
 				Base,
 			);
 			mainGroup = BB377BFF248C8D3700E7E64E;
+			packageReferences = (
+				BB377C25248C8DE100E7E64E /* XCRemoteSwiftPackageReference "Eureka" */,
+			);
 			productRefGroup = BB377C09248C8D3800E7E64E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB377C10248C8D3800E7E64E /* ViewController.swift in Sources */,
+				BB377C10248C8D3800E7E64E /* PatientFormViewController.swift in Sources */,
+				BB8B458D248CF0680034EE96 /* ChoiceViewController.swift in Sources */,
 				BB377C0C248C8D3800E7E64E /* AppDelegate.swift in Sources */,
-				BB377C16248C8D3800E7E64E /* formtesting.xcdatamodeld in Sources */,
+				BBD6978F248C9E560075F845 /* Search.swift in Sources */,
+				BB377C16248C8D3800E7E64E /* Details.xcdatamodeld in Sources */,
 				BB377C0E248C8D3800E7E64E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +383,33 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		BB377C25248C8DE100E7E64E /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB377C26248C8DE100E7E64E /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB377C25248C8DE100E7E64E /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		BB377C14248C8D3800E7E64E /* formtesting.xcdatamodeld */ = {
+		BB377C14248C8D3800E7E64E /* Details.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				BB377C15248C8D3800E7E64E /* formtesting.xcdatamodel */,
 			);
 			currentVersion = BB377C15248C8D3800E7E64E /* formtesting.xcdatamodel */;
-			path = formtesting.xcdatamodeld;
+			path = Details.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
